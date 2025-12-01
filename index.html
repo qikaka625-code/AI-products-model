@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Studio AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #1e1f20; /* Google AI Studio dark bg */
+        color: #e3e3e3;
+        font-family: 'Google Sans', Roboto, sans-serif;
+      }
+      /* Custom scrollbar for the presets container */
+      .preset-grid::-webkit-scrollbar {
+        height: 8px;
+        width: 8px;
+      }
+      .preset-grid::-webkit-scrollbar-track {
+        background: #2d2e30;
+      }
+      .preset-grid::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 4px;
+      }
+      .preset-grid::-webkit-scrollbar-thumb:hover {
+        background: #777;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
